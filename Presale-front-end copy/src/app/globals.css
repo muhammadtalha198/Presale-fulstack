@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-logo: #EAE9E9;
+  --color-gray: #BFBFBF;
+  --color-black: #121212;
+  --color-dark-gray: #707070;
+  --color-body-text: #3D3D3D;
+  --color-success: #6EB7A0;
+  --color-error: #E85A69;
+  --color-disabled: #E4E4E4;
+  --color-background: #F4F4F4;
+  --color-info: #F3AA64;
+  --color-dark-blue: #02284A;
+  --color-blue: #063E67;
+  --color-blue-2: #1B80A4;
+  --color-light-blue: #37D2F4;
+  --color-green: #39D6C5;
+  --color-light-green: #7FECAA;
+  --color-dark-salmon: #E35226;
+  --color-salmon: #EC886A;
+  --color-light-salmon: #F5C6B7;
+  --color-logo-grad-green: #13E5C0;
+  --color-logo-grad-blue: #5D98F0;
+  --color-logo-grad-purple: #E020F1;
+
+  --font-poppins: --font-poppins;
+
+  --animate-rotate-clockwise: rotateClockwise 20s linear infinite;
+}
+
+.escrow-text-gradient {
+  background: #13E5C0;
+  background: linear-gradient(to right, #13E5C0 0%, #5D98F0 50%, #E020F1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: 0;
+}
+
+/* For Chrome, Safari, Edge, and Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /* Removes default margin */
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+  outline: none;
+}
+
+#bg-form {
+  mask-image: linear-gradient(20deg, #1010103f 0%, transparent 40%, transparent 60%, #10101059 100%);
+}
+
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
